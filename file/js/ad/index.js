@@ -114,9 +114,5 @@ encode="text",
 }
 
 tools.ajaxGet(url, data, function(res){
-        
-	mdui.snackbar({
-  message: res,
-  position: 'top',
-});
+      document.write('<div class="mdui-chip"><span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">face</i></span><span class="mdui-chip-title">Example Chip</span></div>');
 })
