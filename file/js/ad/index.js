@@ -109,9 +109,13 @@ var tools = {
 }
 let url = "https://v1.hitokoto.cn/"
 // 传输数据 为object
-let data = {}
+let data = {
+encode="text",
+}
 
 tools.ajaxGet(url, data, function(res){
-	console.log('返回的数据:',res)
-	// ....
+	mdui.snackbar({
+  message: res,
+  position: 'top',
+});
 })
