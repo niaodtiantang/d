@@ -114,6 +114,7 @@ encode="text",
 }
 
 tools.ajaxGet(url, data, function(res){
+        
 	mdui.snackbar({
   message: res,
   position: 'top',
