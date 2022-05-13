@@ -107,7 +107,11 @@ var tools = {
     }
 
 }
-mdui.snackbar({
-  message: 'top',
-  position: 'top',
-});
+let url = "https://v1.hitokoto.cn/"
+// 传输数据 为object
+let data = {}
+
+tools.ajaxGet(url, data, function(res){
+	console.log('返回的数据:',res)
+	// ....
+})
